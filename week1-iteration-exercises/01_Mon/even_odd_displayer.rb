@@ -24,4 +24,20 @@ def display_evens_odds
   
 end
 
-display_evens_odds
+def display_evens_odds2
+  num = [0, collect_num.to_i - 1].max
+  even_odd_arr = ["even", "odd"]
+  # will take even_odd_arr, and num
+  # then call even_odd_arr[num % 2] to get "even" or "odd"
+  
+  num_arr = Array.new(num) { |index| index }
+  for num in num_arr
+    num += 1
+    even_or_odd = even_odd_arr[num % 2]
+    puts "#{num}: #{even_or_odd}"
+  end
+  
+end
+
+# display_evens_odds
+display_evens_odds2
