@@ -12,4 +12,15 @@ def get_factors():
             print(f"{cur_num}: not a factor of {number}")
         cur_num += 1
 
-get_factors()
+def get_factors2(init, acc):
+    if acc == init:
+        return
+    else:
+        if init % acc == 0:
+            print(f"{acc}: factor of {init}")
+        else:
+            print(f"{acc}: not a factor of {init}")
+        get_factors2(init, acc + 1)
+
+# get_factors()
+get_factors2(int(getInput()), 1)
