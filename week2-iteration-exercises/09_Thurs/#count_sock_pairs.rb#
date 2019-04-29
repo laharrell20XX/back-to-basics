@@ -1,0 +1,14 @@
+def count_sock_pairs (socks)
+   
+end
+
+socks1 = ['c1','c1','c4','c3','c2','c1','c3']
+socks2 = []
+socks3 = ['c1','c4','c2','c9','c0','c1','c5']
+puts (count_sock_pairs(socks1) == 2)
+puts("Actual Result: #{count_sock_pairs(socks1)}")
+
+puts(count_sock_pairs(socks2) == 0)
+
+
+puts(
